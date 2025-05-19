@@ -81,5 +81,29 @@ public class MenuBatalha {
     }
 
 
+    public boolean turno(Scanner scanner, Personagem jogador, Personagem oponente){
+            menuAcoes(scanner, jogador, oponente);
+            if (oponente.getHealth() <= 0){
+                System.out.println(oponente.getNickname() + " foi derrotado!");
+                return true;
+            }
+            return false;
+    }
+
+    public void iniciarBatalha(Scanner scanner) {
+        Personagem jogador1 = criarPersonagem(scanner);
+        Personagem jogador2 = criarPersonagem(scanner);
+
+        while(true){
+            if (turno(scanner, jogador1, jogador2 )) break;
+            if (turno(scanner, jogador2, jogador1)) break;
+
+        }
+
+        System.out.println("Game Over!");
+
+    }
+
+
 }
 
