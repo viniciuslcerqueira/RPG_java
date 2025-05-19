@@ -1,7 +1,7 @@
 public class Bruxo extends Personagem {
 
-    public Bruxo(String nickname, int health, int mana, int forca, int inteligencia) {
-        super(nickname, health, mana, forca, inteligencia);
+    public Bruxo(String nickname) {
+        super(nickname, 110, 80, 25, 25);
     }
 
     @Override

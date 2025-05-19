@@ -1,7 +1,7 @@
 public class Guerreiro extends Personagem  {
 
-    public Guerreiro(String nickname, int health, int mana, int forca, int inteligencia) {
-        super(nickname, health, mana, forca, inteligencia);
+    public Guerreiro(String nickname) {
+        super(nickname, 150, 30, 40, 10);
     }
 
     @Override
