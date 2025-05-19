@@ -43,10 +43,10 @@ public class MenuBatalha {
     }
 
 
-    public void menuAcoes(Scanner scanner, Personagem personagem, Personagem alvo) {
+    public void menuAcoes(Scanner scanner, Personagem personagem, Personagem alvo)  {
         int escolha = 0;
         do {
-            System.out.println("O que gostaria de fazer?");
+            System.out.println("O que gostaria de fazer " + personagem.getNickname() + "?");
             System.out.println("1 - Atacar");
             System.out.println("2 - Usar Habilidade");
             System.out.println("3 - Se Buffar");
@@ -103,7 +103,6 @@ public class MenuBatalha {
         System.out.println("Game Over!");
 
     }
-
 
 }
 
